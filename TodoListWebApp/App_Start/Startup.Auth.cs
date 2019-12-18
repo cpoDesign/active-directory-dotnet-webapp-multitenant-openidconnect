@@ -80,9 +80,9 @@ namespace TodoListWebApp
                             string tenantId = context.AuthenticationTicket.Identity.FindFirst("http://schemas.microsoft.com/identity/claims/tenantid").Value;
                             /*
                              * My Account:
-                             * AzureAD - Default Azure AD - 29a052c3-b98f-4647-af4d-1532b4d335aa
-                             * live.com#pavel.svarc@babcockinternational.com
-                             * ISSUER (AD Tennant): https://sts.windows.net/29a052c3-b98f-4647-af4d-1532b4d335aa/ 
+                             * AzureAD - Default Azure AD - 29a052c3-b78f-5649-af4d-1532b4d335aa
+                             * live.com#pavel.svarc@bab.com
+                             * ISSUER (AD Tennant): https://sts.windows.net/29a2582c4-b98f-4647-af4d-1532b4d335aa/ 
                              * 
                              * 
                              * 
@@ -132,9 +132,9 @@ namespace TodoListWebApp
                 // * Or you can provide a static list of acceptable tenantIds, as detailed below
                 // ValidIssuers = new List<string>()
                 // {
-                //     "https://sts.windows.net/6d9c0c36-c30e-442b-b60a-ca22d8994d14/",
-                //     "https://sts.windows.net/f69b5f46-9a0d-4a5c-9e25-54e42bbbd4c3/",
-                //     "https://sts.windows.net/fb674642-8965-493d-beee-2703caa74f9a/"
+                //     "https://sts.windows.net/6d9c0c36-c30e-454b-b60a-ea22d8994d14/",
+                //     "https://sts.windows.net/f69b5f46-9a0d-4a8c-9b25-12e42bbbd4c3/",
+                //     "https://sts.windows.net/fb674642-8965-499d-bcee-2703caa74f9a/"
                 // }
                 ValidateIssuer = true,
                 IssuerValidator = AadIssuerValidator.ValidateAadIssuer
